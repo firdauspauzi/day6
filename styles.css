@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    /* background-color: yellow; */
+}
+
+#container{
+    width: 900px;
+    height: 600px;
+    border: 2px solid black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#numCount{
+    font-size: 60px;
+}
+
+.btn{
+  width: 100px;
+  height: 40px;
+  font-size: 30px;   
+}

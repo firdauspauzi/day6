@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel = "stylesheet" href = "styles.css" />
+        <script>
+            
+            var defaultVol = 1;
+            
+            function playVid(){
+                document.getElementById("vid").play();
+            }
+
+            function pauseVid(){
+                document.getElementById("vid").pause();
+            }
+
+            function volControl(vol){
+                defaultVol += vol;
+                document.getElementById("vid").volume = defaultVol;
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id = "container">
+            <!-- <video src="mov_bbb.mp4" width="600px" controls loop autoplay muted></video> -->
+        <!-- autoplay works only when muted -->
+            <video  id = "vid" src="mov_bbb.mp4" width="600px" controls></video>
+            <br>
+            <button class = "btn" onclick="playVid()">Play</button>
+            <button class="btn" onclick="pauseVid()">Pause</button>
+            <button class="btn" onclick="volControl(0.1)">Vol Up</button>
+            <button class="btn" onclick="volControl(-0.1)">Vol Down</button>
+        </div>
+    </body>
+</html>
+
+<!-- play() : starts (or restarts) playing the media file
+    pause() : stops playback at the current location
+    load() : allows to substitute the active video in the player with another (for example, after changing the src attribute) -->
+
+<!-- currentTime : time at a given time in reading the media file in seconds
+    duration : duration of the media file in seconds
+    volume : volume level (between 0.0 and 1.0) -->
