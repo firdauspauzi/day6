@@ -9,6 +9,7 @@
 body{
     background-color:  white;
     margin: 0;
+    overflow-y: scroll;
 }
 
 .heading{
@@ -86,6 +87,10 @@ video::-webkit-media-controls-play-button {
 /* video::-webkit-media-controls-volume-slider {
         display: block;
     } */
+
+    /* ::-webkit-scrollbar { 
+        width: 0px!important;
+      }  */
     
 video::-webkit-media-controls-mute-button {
         display: none;
