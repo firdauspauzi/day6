@@ -2,8 +2,13 @@
     margin: 0; padding: 0; box-sizing: border-box;
 }
 
+html {
+    overflow-y: scroll; 
+  }
+
 body{
-    background-color:  white);
+    background-color:  white;
+    margin: 0;
 }
 
 .heading{
@@ -77,9 +82,9 @@ video::-webkit-media-controls-play-button {
         display: none;
     }
     
-video::-webkit-media-controls-volume-slider {
-        display: none;
-    }
+/* video::-webkit-media-controls-volume-slider {
+        display: block;
+    } */
     
 video::-webkit-media-controls-mute-button {
         display: none;

@@ -64,6 +64,9 @@ function fwdVid(){
     myVideo.currentTime = myVideo.currentTime += 1;
 };
 
+var defaultVol = 0.5;
 
-
-//playlist
+function volControl(vol){
+    defaultVol += vol;
+    document.getElementById("vid").volume = defaultVol;   
+}
